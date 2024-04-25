@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(235, 226, 226);
+}
+
+header {
+    position: fixed;
+    padding: 10px;
+    width: 100vw;
+    background-color: rgba(250, 209, 209, 0.243);
+    box-shadow: 0px 0px 40px black;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.header-titulo {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.header-titulo h1 {
+    color: rgb(11, 11, 93);
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.caixa-pesquisa {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.search {
+    padding: 10px;
+    width: 400px;
+    border-radius: 10px;
+    border: none;
+    margin-right: 10px;
+    border-radius: 30px 0px 0px 30px;
+    outline: none;
+}
+
+.btn-pesquisa {
+    height: 40px;
+    cursor: pointer;
+}
+
+.container-menu-list {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.header-icone-menu {
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.list {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    transform: translateX(-300px);
+    transition: transform 0.5s ease;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+li {
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+li:hover {
+    transform: translateY(-5px);
+    color: rgb(11, 11, 93);
+}
+
+.icone-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.sessao1-img {
+    height: 600px;
+    width: 72%;
+    margin-top: 20px
+}
+
+.sessao1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    padding: 75px 10px 0px 10px;
+}
+
+.caixa-botao {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-vermais {
+    padding: 15px;
+    width: 200px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(195, 195, 243);
+    border: 3px;
+}
+
+.btn-vermais:hover {
+    background-color: rgb(105, 105, 245);
+}
+
+.sessao2-img {
+    height: 500px;
+    width: 1000px;
+}
+
+.caixa-titulo-adidas {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    width: 100%;
+}
+
+.titulo-adidas {
+    color: rgb(105, 104, 104);
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container-produtos {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+.caixa-tenis {
+    background-color: rgb(251, 248, 248);
+    padding: 0px 0px 35px 0px;
+    margin: 10px;
+}
+
+.caixa-tenis:hover {
+    box-shadow: 0px 1px 10px black;
+}
+
+.produto {
+    margin: 20px;
+    height: 300px;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+.produto:hover {
+    transform: scale(1.1);
+}
+
+.descricao-produto {
+    color: rgb(105, 104, 104);
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container-preco {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px;
+}
+
+.preco-produto {
+    color: green;
+    font-size: 20px;
+}
+
+.vendidos {
+    color: gray;
+}
+
+.rate {
+    color: green;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.div-oculta {
+    display: none;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.caixa-banner2 {
+    display: flex;
+    margin: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    padding: 50px;
+    width: 100%;
+    box-shadow: 10px 10px 15px black;
+    justify-content: space-around;
+}
+
+.footer-midias {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.footer-links {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    li {
+        display: none;
+    }
+
+    .caixa-pesquisa {
+        width: 250px;
+        margin-top: 10px;
+    }
+
+    .icone-menu {
+        display: block;
+    }
+
+    .sessao1-img {
+        margin-top: 70px;
+        height: 200px;
+        width: 360px;
+    }
+
+    .produto {
+        height: 100px;
+    }
+
+    .caixa-tenis {
+        padding: 0;
+        margin: 5px;
+    }
+
+    .sessao2-img {
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    li {
+        padding: 5px;
+    }
+
+    .sessao1-img {
+        height: 300px;
+        width: 350px;
+        margin-top: 30px;
+    }
+
+    .caixa-tenis {
+        padding: 2px;
+    }
+
+    .sessao2-img {
+        height: 400px;
+        width: 500px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .sessao1-img {
+        height: 400px;
+        width: 650px;
+    }
+
+    .sessao2-img {
+        height: 450px;
+        width: 800px;
+    }
+}
+
+@media (min-width: 1700px) {
+    .sessao1-img {
+        height: 500px;
+        width: 1100px;
+    }
+}
